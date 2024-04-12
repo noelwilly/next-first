@@ -15,6 +15,16 @@ function header() {
             Henry
           </Link>
         </li>
+        <li>
+          <Link href="./pete" prefetch={false}>
+            Pete
+          </Link>
+        </li>
+        <li>
+          <Link href="./tommi" prefetch={false}>
+            Tommi
+          </Link>
+        </li>
       </ul>
     </nav>
   );
