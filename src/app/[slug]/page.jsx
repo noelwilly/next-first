@@ -19,8 +19,10 @@ export default async function DogPage({ params }) {
   const url = `https://nice-dogs.vercel.app/api/dogs?slug=${slug}`;
   const res = await fetch(url);
 
+  // fejl 404, ingen dog API
   if (res.status !== 200) return notFound();
 
+  // succes
   const data = await res.json();
   console.log(data);
 
